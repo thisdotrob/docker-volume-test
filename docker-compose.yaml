@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  test:
+    build: .
+    image: docker-test
+    volumes:
+      - ./:/build
+    ports:
+      - 3000:3000
